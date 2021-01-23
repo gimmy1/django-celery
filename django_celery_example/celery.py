@@ -27,6 +27,7 @@ app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 
 @app.task
 def add(x,y):
+    print("Hello")
     time.sleep(5)
     return x / y
 
